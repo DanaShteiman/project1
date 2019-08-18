@@ -5,4 +5,7 @@ node{
     stage("run 1.py"){
         bat "python 1.py"
     }
+    stage("copy file"){
+        copy 1.py myapp.py
+    }
 }
